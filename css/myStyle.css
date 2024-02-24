@@ -104,3 +104,132 @@ rgba(35,37,58,.9),
 rgba(35,37,58,.9), 
 rgba(24,40,72,.2));
 }
+/*文章页卡片宽幅占比*/
+.layout {
+    max-width: 1280px;
+}
+/*文章页卡片圆角*/
+.layout > div:first-child:not(.recent-posts) {
+    border-radius: 35px;
+}
+/*文章页信息栏美化*/
+#post-info .post-title {
+    font-weight: 600; /*字体粗细*/
+    font-size: 2.5em; /*字体大小*/
+    line-height: 2.2; /*元素高度*/
+    letter-spacing: 9px; /*字体间距*/
+  }
+  
+  /*信息栏高度调整*/
+  #page-header.post-bg {
+    height: 26rem;
+  }
+  
+  /*Web端信息栏适配*/
+  @media screen and (min-width: 421px){
+    #page-header #post-info {
+      bottom: 8rem;
+  }
+  }
+  
+  /*Wap端信息栏适配*/
+  @media screen and (max-width: 420px){
+    #page-header #post-info {
+      bottom: 2rem;
+  }
+  }
+  /*顶栏美化*/
+#nav .site-page {
+    font-size: 0.79em; /*字体大小*/
+    letter-spacing: 3px; /*字体间距*/
+    font-weight: 600; /*字体粗细*/
+  }
+  
+  #nav {
+    height: 70px; /*顶栏高度调整*/
+  }
+  #page-header.nav-fixed #nav {
+    top: -70px; /*顶栏调整空缺补齐*/
+  }
+  /*文章页目录卡片圆角*/
+#aside-content .card-widget {
+    border-radius: 20px;
+    }
+    /*文章页目录美化*/
+#aside-content .card-widget {
+    padding: 2rem 1.2rem; /*前者为上下边距，后者为左右边距*/
+  }
+  /*调宽页脚*/
+#footer-wrap {
+    padding: 3rem 2rem; /*前者为上下边距，后者为左右边距*/
+  }
+  /*选中颜色*/
+*::selection {
+    background: #df3030;
+    color: #f7f7f7;
+  }
+  /* 文章标题 */
+#post-info .post-title {
+    color: var(white);
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    text-align: center;
+    margin: 1rem 0 1rem 0 !important;
+    -webkit-line-clamp: 2;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #post-info .post-title {
+      font-size: 1.6rem;
+      -webkit-line-clamp: 3;
+      margin: 0.2rem auto !important;
+      text-align: center;
+      z-index: 1;
+    }
+  }
+  
+  /*信息栏底部圆角*/
+  #page-header.post-bg:before {
+    background-color: rgb(0 0 0 / 60%);
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+  }
+  
+  #page-header.post-bg {
+    border-bottom-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+  }
+  
+  /* 文章顶部其他信息 */
+  #post-meta>div {
+    text-align: center;
+    color:white
+  }
+  /* 隐藏信息文字 */
+  #post-info #post-meta .post-meta-label {
+    display: none;
+  }
+  /* 图标数字间距 */
+  #post-info #post-meta .post-meta-icon {
+    margin-right: 0.3rem;
+  }
+  /* 每组间距 */
+  #post-info #post-meta .post-meta-separator {
+    margin: 0px 0.4rem;
+  }
+  /*版权卡片美化*/
+#post .post-copyright {
+    position: relative;
+    margin: 2rem 0 0.5rem;
+    padding: 1.5rem 0.8rem;
+    border: 8px solid #f6f6f6; /*卡片边框*/
+    border-radius: 20px; /*边框圆角*/
+    }
+    #post .post-copyright:before {
+    position: absolute;
+    top: -1.9rem; /*C位置*/
+    color: #49b1f540; /*C颜色*/
+    font-size: 6rem; /*C大小*/
+    }
